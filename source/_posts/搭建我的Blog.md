@@ -26,7 +26,7 @@ tags:
   \- tag2
 </code></pre>
 
-> 注意点：
+**注意点：**
 1. 冒号后面要有空格
 2. 要添加tags和categories页面
 3. 主题的配置文件和站点的配置文件tags和categories的注释要打开
