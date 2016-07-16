@@ -7,6 +7,7 @@ title: DamonXiong
 subtitle:
 description:
 author: Damon Xiong
+email: xiongxiangquan@gmail.com
 language: zh-Hans
 timezone:
 avatar: https://avatars1.githubusercontent.com/u/20457560?v=3&u=8b030e367db5264032fbb91748d82c50e3878bc2&s=140
@@ -35,7 +36,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -86,5 +87,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/DamonXiong/damonxiong.github.io.git
+  repository: git@github.com:DamonXiong/damonxiong.github.io.git
   branch: master
