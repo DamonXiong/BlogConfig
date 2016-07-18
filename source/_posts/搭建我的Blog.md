@@ -54,10 +54,25 @@ tags:
 调用以下命令安装依赖库
 <pre><code>npm install</code></pre>
 
+### 生成默认静态测试helloWord
+执行以下命令：
+<pre><code>hexo generate</code></pre>
+
 ### 本地查看页面
+执行以下命令：
+<pre><code>hexo server</code></pre>
+
+成功后，在浏览器中输入[http://localhost:4000](http://localhost:4000)访问。
+正常情况下是可以的，但是有的电脑可能不行，我这边出现过4000端口被占用，可以在node_modules目录下的hexo-server目录下的index.js文件中修改端口配置，如下图：
+![](搭建我的Blog/修改server的port.png)
+
+重新执行命令，可以看到端口修改，使用相应的链接查看：
+![](搭建我的Blog/端口修改后启动提示.png)
+
 ## hexo配置
 ### 资源文件夹使用
 [在hexo中无痛使用本地图片-M-x codefalling](http://www.tuicool.com/articles/umEBVfI)
+根据提示配置后，可以在写博客时使用本地图片。
 
 ### 标签(Tags)和分类(categories)
 
@@ -105,8 +120,32 @@ comments: false
 </code></pre>
 
 ## hexo主题相关
-在[官网主题](https://hexo.io/themes/)中有一些主题,我个人使用的是NexT主题
+在[官网主题](https://hexo.io/themes/)中有一些主题，可以自己根据喜好进行选择，我个人使用的是NexT主题
 ### NexT主题
-[NexT主题主页](http://theme-next.iissnan.com/)
-#### 主题安装
-#### 主题配置
+主题安装配置参考[NexT主题主页](http://theme-next.iissnan.com/)，根据个人喜好配置
+
+## hexo代码提交github
+### 修改deploy配置
+编辑站点配置文件，_config.yml，修改deploy字段下配置如下：
+![](搭建我的Blog/deploy配置.png)  
+> repository字段可以使用https链接，但是有时候会出现上传失败问题，上网查看了一些资料，将其修改为SSH方式就成功。
+
+### 安装hexo-deployer-git
+执行命令：
+<pre><code>npm install hexo-deployer-git --save</code></pre>
+
+> \-\-save将配置信息写入package.json中  
+
+### 代码提交
+执行命令：
+<pre><code>hexo deploy</code></pre>
+
+### 访问我的Blog
+[DamonXiong's Blog](http://damonxiong.github.io)
+
+# 编写博客
+使用MarkDown编写文件
+## MarkDown相关链接
+[Cmd Markdown 编辑阅读器](https://www.zybuluo.com/mdeditor)  
+[认识与入门 Markdown - 少数派](http://sspai.com/25137)  
+[Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/#list)  
