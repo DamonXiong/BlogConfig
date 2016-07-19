@@ -238,11 +238,11 @@ mathjax:
 
 
 # Swiftype Search API Key
-swiftype_key: cyv8YmhTY1sx8xxFbfhk
+# swiftype_key: QvxB7uU97VoyuLr2nMJQ
 
-# search:
-#   path: search.xml
-#   field: post
+search:
+  path: search.xml
+  field: post
 
 # Baidu Analytics ID
 #baidu_analytics:
