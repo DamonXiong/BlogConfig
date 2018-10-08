@@ -87,7 +87,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: 
-    github: git@github.com:DamonXiong/damonxiong.github.io.git
-    coding: git@github.com:DamonXiong/BlogConfig.git
+  repo: https://github.com/DamonXiong/damonxiong.github.io.git
   branch: master
