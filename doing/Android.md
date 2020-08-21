@@ -4,12 +4,24 @@
 ### 文章
 [feiq's Blog](http://blog.inching.org/categories/RxJava/)  
 [给 Android 开发者的 RxJava 详解](https://gank.io/post/560e15be2dca930e00da1083)  
+[RxBus – Implementing event bus with RxJava](https://androidwave.com/rxbus-implementing-event-bus-with-rxjava/)
+[Android常用之Butterknife使用详解](https://segmentfault.com/a/1190000016460847)
 
 ### 视频
 [RxJava与RxAndroid基础入门](https://www.imooc.com/learn/877)
 
 ### Github
-[ReactiveX/RxAndroid](https://github.com/ReactiveX/RxAndroid)
+[ReactiveX/RxAndroid](https://github.com/ReactiveX/RxAndroid)  
+[rengwuxian/RxJavaSamples](https://github.com/rengwuxian/RxJavaSamples)  
+[JakeWharton/RxBinding](https://github.com/JakeWharton/RxBinding)  
+[JakeWharton/butterknife](https://github.com/JakeWharton/butterknife)
+
+### 学习笔记
+1. flatMap() 的原理是这样的：
+   1. 使用传入的事件对象创建一个 Observable 对象；
+   2. 并不发送这个 Observable, 而是将它激活，于是它开始发送事件；
+   3. 每一个创建出来的 Observable 发送的事件，都被汇入同一个 Observable ，而这个 Observable 负责将这些事件统一交给 Subscriber 的回调方法。
+2. 
 
 
 # 应用服务器
