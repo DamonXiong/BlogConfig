@@ -1,7 +1,7 @@
 ---
 title: BigData
 date: 2019-06-02 16:24:30
-categories: - 大数据
+categories: 大数据
 tags: 
   - 大数据
 ---
