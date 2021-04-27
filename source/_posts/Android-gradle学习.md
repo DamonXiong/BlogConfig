@@ -1,7 +1,7 @@
 ---
 title: Android-gradle学习
 date: 2019-03-02 20:11:59
-categories: Android
+categories: 技术笔记
 tags: 
   - Android
   - gradle

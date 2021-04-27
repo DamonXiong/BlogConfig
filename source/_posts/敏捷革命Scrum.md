@@ -1,5 +1,5 @@
 ---
-title: 《敏杰革命 SCRUM》
+title: 《敏捷革命 SCRUM》
 date: 2018-05-28 18:21:26
 categories: -Scrum
 tags:

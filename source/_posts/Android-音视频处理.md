@@ -1,8 +1,10 @@
 ---
 title: Android-音视频处理
 date: 2019-03-10 16:21:46
-categories:
+categories: 技术笔记
 tags:
+   - Android
+   - 音视频
 ---
 # 参考链接
 [移动端音频视频入门](https://www.imooc.com/learn/959)  
