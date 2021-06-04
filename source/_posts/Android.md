@@ -6,6 +6,9 @@ tags:
  - Android
 ---
 
+# 学习路径
+1. [Android 成为资深研发之路](https://github.com/blindmonk/Android-Link)
+
 # RXJava
 ## 学习链接
 ### 文章
@@ -70,3 +73,4 @@ tags:
    2. 另外，后台线程退出前，需要调用JavaVM的DetachCurrentThread函数来释放对应的资源。
 
 ## 深入理解init
+
