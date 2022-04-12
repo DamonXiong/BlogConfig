@@ -11,14 +11,13 @@ tags:
 ## 学习链接
 
 [Q 区块链-知乎](https://zhuanlan.zhihu.com/c_1005861027501768704)
-再开始 EOSIO 的 training 前，建议小伙伴们可以看下，BTC 和 ETH 相关的白皮书
-比特币白皮书: https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf
-比特币白皮书精读: https://www.jianshu.com/p/ca0c0a0e0faa 
-白皮书官方地址：https://github.com/ethereum/wiki/wiki/White-Paper
-社区中文版本：http://ethfans.org/wikis/以太坊白皮书
-我也推荐两本：
-《mastering bitcoin》: https://github.com/bitcoinbook/bitcoinbook 
-《mastering ethereum》: https://github.com/ethereumbook/ethereumbook
+[比特币白皮书](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
+[比特币白皮书精读](https://www.jianshu.com/p/ca0c0a0e0faa)
+[白皮书官方地址](https://github.com/ethereum/wiki/wiki/White-Paper)
+[以太坊白皮书-社区中文版本](http://ethfans.org/wikis/以太坊白皮书)
+[mastering bitcoin](https://github.com/bitcoinbook/bitcoinbook) 
+[mastering ethereum](https://github.com/ethereumbook/ethereumbook)
+[区块链技术指南-yeasy](https://yeasy.gitbook.io/blockchain_guide)
 
 ## 学习摘要
 
@@ -188,3 +187,27 @@ tags:
 6. E代表熵。 R是可用字符数。 L是密码的长度。您还可以通过首先计算可用字符数（R）到密码（L）中字符数的幂，然后计算结果的二进制对数（log 2 ）来获得密码的熵（E） = log 2 （R^L ））。
 
 
+# 《区块链技术指南-yeasy》
+## 分布式系统核心技术
+### 一致性问题
+1. 一致性问题是分布式领域最基础、最重要的问题
+2. 定义 一致性（Consistency），早期也叫（Agreement），在分布式系统领域中是指对于多个服务节点，给定一系列操作，在约定协议的保障下，使得它们对处理结果达成“某种程度”的协同。
+3. 一致性关注的是系统呈现的状态，并不关注结果是否正确；例如，所有节点都对某请求达成否定状态也是一种一致性。
+4. 将可能引发不一致的并行操作进行串行化。这实际上也是现代分布式系统处理一致性问题的基础思路
+5. 规范来看，分布式系统达成一致的过程，应该满足：
+    可终止性（Termination）：一致的结果在有限时间内能完成；
+    约同性（Agreement）：不同节点最终完成决策的结果是相同的；
+    合法性（Validity）：决策的结果必须是某个节点提出的提案。
+6. 解决分布式系统领域很多问题的核心秘诀：把不同时空发生的多个事件进行全局唯一排序，而且这个顺序还得是大家都认可的。
+7. 强一致性主要包括顺序一致性（Sequential Consistency）和线性一致性（Linearizability Consistency：
+   1. 顺序一致性：又叫因果一致性，所有进程看到的全局执行顺序（total order）一致（否则数据副本就不一致了）；并且每个进程看自身操作的顺序（local order）跟实际发生顺序一致。
+   2. 线性一致性：由 Maurice P. Herlihy 与 Jeannette M. Wing 在 1990 年经典论文《Linearizability: A Correctness Condition for Concurrent Objects》中共同提出，是最强的一致性。它在顺序一致性前提下增加了进程间的操作顺序要求，形成理想化完全一致的全局顺序。
+8. 放宽对一致性的要求，采用部分异步操作，从而提升性能、可扩展性，降低响应延迟，这些在某些方面弱化的一致性都笼统称为弱一致性
+
+### 共识算法
+1. 而共识，则特指在分布式系统中多个节点之间对某个事情（例如多个事务请求，先执行谁？）达成一致看法的过程。因此，达成某种共识并不意味着就保障了一致性。
+2. 根据解决的场景是否允许拜占庭错误情况，共识算法可以分为 Crash Fault Tolerance (CFT) 和 Byzantine Fault Tolerance（BFT）两类。对于非拜占庭错误的情况，已经存在不少经典的算法，包括 Paxos（1990 年）、Raft（2014 年）及其变种等。这类容错算法往往性能比较好，处理较快，容忍不超过一半的故障节点。对于要能容忍拜占庭错误的情况，包括 PBFT（Practical Byzantine Fault Tolerance，1999 年）为代表的确定性系列算法、PoW（1997 年）为代表的概率算法等。确定性算法一旦达成共识就不可逆转，即共识是最终结果；而概率类算法的共识结果则是临时的，随着时间推移或某种强化，共识结果被推翻的概率越来越小，最终成为事实上结果。拜占庭类容错算法往往性能较差，容忍不超过 1/3 的故障节点
+3. 即便在网络通信可靠情况下，一个可扩展的分布式系统的共识问题通用解法的下限是——没有下限（无解）。
+
+### FLP 不可能原理
+1. 

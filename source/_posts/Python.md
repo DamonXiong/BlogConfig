@@ -12,7 +12,8 @@ description: python学习笔记
 # 学习路径:
 1. [Python数据预处理（一）一抽取多源数据文本信息](https://www.imooc.com/learn/1105)
 2. [Python开发简单爬虫](https://www.imooc.com/learn/563)
-3. 数据分析：pandas、statsmodels（科学研究建模）、sklearn（数据挖掘）
+3. [Hacking tool](https://3wapp.github.io/)
+4. 数据分析：pandas、statsmodels（科学研究建模）、sklearn（数据挖掘）
 
 # 学习笔记
 ## 《[Python数据预处理》--伏草惟存
