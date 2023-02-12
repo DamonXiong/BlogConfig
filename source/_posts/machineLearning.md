@@ -37,7 +37,7 @@ conda deactivate tf-cpu
 
 ## 基础
 ### 监督学习经典模型
-1. ![监督学习基本架构和流程](.\machineLearning\监督学习基本架构和流程.png)
+1. ![监督学习基本架构和流程](./machineLearning/监督学习基本架构和流程.png)
 
 
 
@@ -47,9 +47,9 @@ conda deactivate tf-cpu
 
 ## 课程笔记
 1. 知识框架
-   ![知识框架](.\machineLearning\机器学习知识框架.png)
+   ![知识框架](./machineLearning/机器学习知识框架.png)
 2. Anaconda安装Python及部分库
-3. ![训练集-验证集-测试集](.\machineLearning\训练集-验证集-测试集.png)
+3. ![训练集-验证集-测试集](./machineLearning/训练集-验证集-测试集.png)
 4. 学习方式：
    1. 监督学习：用来训练带有标签的数据集
    2. 无监督学习：用来训练没有标签的数据集
@@ -59,46 +59,46 @@ conda deactivate tf-cpu
    2. 分类
    3. 聚类
 6. 一元线性回归
-   1. ![训练集-验证集-测试集](.\machineLearning\一元线性回归.png)
+   1. ![训练集-验证集-测试集](./machineLearning/一元线性回归.png)
 7. 代价函数（Cost Function）
-   1. ![最小二乘法](.\machineLearning\最小二乘法.png)
-   2. ![相关系数](.\machineLearning\相关系数.png)
-   3. ![决定系数](.\machineLearning\决定系数.png)
+   1. ![最小二乘法](./machineLearning/最小二乘法.png)
+   2. ![相关系数](./machineLearning/相关系数.png)
+   3. ![决定系数](./machineLearning/决定系数.png)
 8. 梯度下降法（优化算法）
-   1. ![梯度下降法](.\machineLearning\梯度下降法.png)
-   2. ![局部最小值问题](.\machineLearning\局部最小值问题.png)
-   3. ![梯度下降法求线性回归](.\machineLearning\梯度下降法求线性回归.png)
-   4. ![梯度下降法求线性回归2](.\machineLearning\梯度下降法求线性回归2.png)
+   1. ![梯度下降法](./machineLearning/梯度下降法.png)
+   2. ![局部最小值问题](./machineLearning/局部最小值问题.png)
+   3. ![梯度下降法求线性回归](./machineLearning/梯度下降法求线性回归.png)
+   4. ![梯度下降法求线性回归2](./machineLearning/梯度下降法求线性回归2.png)
    5. 非凸函数使用梯度下降法可能只能获取局部最小值，线性回归是凸函数，可以使用梯度下降法
 9. 多元线性回归
-   1.  ![多元线性回归模型](.\machineLearning\多元线性回归模型.png)
+   1.  ![多元线性回归模型](./machineLearning/多元线性回归模型.png)
 10. 多项式回归
     1.  y=c+bt+at^2(次方数可再次增加)
 11. 标准方程法
-    1.  ![标准方程法](.\machineLearning\标准方程法.png)
-    2.  ![标准方程法](.\machineLearning\标准方程法2.png)
-    3.  ![矩阵不可逆情况](.\machineLearning\矩阵不可逆情况.png)
-    4.  ![梯度下降对比标准方程](.\machineLearning\梯度下降对比标准方程.png)
+    1.  ![标准方程法](./machineLearning/标准方程法.png)
+    2.  ![标准方程法](./machineLearning/标准方程法2.png)
+    3.  ![矩阵不可逆情况](./machineLearning/矩阵不可逆情况.png)
+    4.  ![梯度下降对比标准方程](./machineLearning/梯度下降对比标准方程.png)
 12. 特征缩放
-    1.  ![数据归一化](.\machineLearning\数据归一化.png)
-    2.  ![均值标准化](.\machineLearning\均值标准化.png)
+    1.  ![数据归一化](./machineLearning/数据归一化.png)
+    2.  ![均值标准化](./machineLearning/均值标准化.png)
 13. 交叉验证法
-    1.  ![交叉验证法](.\machineLearning\交叉验证法.png)
+    1.  ![交叉验证法](./machineLearning/交叉验证法.png)
 14. 拟合
-    1.  ![拟合](.\machineLearning\拟合.png)
-    2.  ![防止过拟合](.\machineLearning\防止过拟合.png)
-    3.  ![正则化](.\machineLearning\正则化.png)
+    1.  ![拟合](./machineLearning/拟合.png)
+    2.  ![防止过拟合](./machineLearning/防止过拟合.png)
+    3.  ![正则化](./machineLearning/正则化.png)
 15. 岭回归
-    1.  ![岭回归](.\machineLearning\岭回归.png)
-    2.  ![岭回归](.\machineLearning\岭回归2.png)
+    1.  ![岭回归](./machineLearning/岭回归.png)
+    2.  ![岭回归](./machineLearning/岭回归2.png)
 16. LASSO
-    1.  ![LASSO](.\machineLearning\LASSO.png)
-    2.  ![LASSO与岭回归](.\machineLearning\LASSO与岭回归.png)
-    3.  ![LASSO与岭回归2](.\machineLearning\LASSO与岭回归2.png)
-    4.  ![LASSO与岭回归3](.\machineLearning\LASSO与岭回归3.png)
+    1.  ![LASSO](./machineLearning/LASSO.png)
+    2.  ![LASSO与岭回归](./machineLearning/LASSO与岭回归.png)
+    3.  ![LASSO与岭回归2](./machineLearning/LASSO与岭回归2.png)
+    4.  ![LASSO与岭回归3](./machineLearning/LASSO与岭回归3.png)
 17. 弹性网-2005年提出
-    1.  ![弹性网](.\machineLearning\弹性网.png)
-    2.  ![弹性网正则式](.\machineLearning\弹性网2.png)
+    1.  ![弹性网](./machineLearning/弹性网.png)
+    2.  ![弹性网正则式](./machineLearning/弹性网2.png)
     3.  结合岭回归和LASSO
 
 
@@ -106,11 +106,11 @@ conda deactivate tf-cpu
 # 《Python3入门机器学习经典算法与应用》--慕课网
 ## 课程摘要
 ### 简介
-1. ![弹性网正则式](.\machineLearning\机器学习算法.png)
-2. ![机器学习学习注意点](.\machineLearning\机器学习学习注意点.png)
+1. ![弹性网正则式](./machineLearning/机器学习算法.png)
+2. ![机器学习学习注意点](./machineLearning/机器学习学习注意点.png)
 ### 第2章 机器学习基础
 1. 大写字母代表矩阵，小写代表向量
-2. ![数据](.\machineLearning\数据.png)
+2. ![数据](./machineLearning/数据.png)
 3. 特征向量一般表征为列向量。行向量转置为列向量
 4. 图像，每一个像素点都是特征。特征可以抽象。
 5. 二分类和多分类：结果一个类别。
