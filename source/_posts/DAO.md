@@ -10,6 +10,9 @@ tags:
 # 什么是DAO
 DAO更像是一种精神，而不是特定的构造。
 DAO之间有一种共享的文化，一套共享的文化规范，无论特定DAO在去中心化/自治范围内的确切位置如何，这都是正确的。
+现实世界中的任何组织都可以理解成是DAO
+DAO的权益和成员资格由 DAO 发布到区块链的某些“代币”的所有权决定
+
 
 # 相关产品记录
 1. 
@@ -24,3 +27,5 @@ DAO之间有一种共享的文化，一套共享的文化规范，无论特定DA
 7. [How to Create a DAO? - Binance Academy](https://academy.binance.com/en/articles/how-to-create-a-dao)
 8. [DAO：一个美丽的新世界？](https://www.bimama.com/news/12960.html)
 9. [Wilder World，一个DAO平台和沉浸式3D NFT平台](https://www.wilderworld.com/)
+10. [trailofbits](https://www.trailofbits.com/)
+11. 
